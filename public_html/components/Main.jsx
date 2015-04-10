@@ -4,14 +4,21 @@ var MainComponent = React.createClass({
   propTypes: {
     message: React.PropTypes.string.isRequired
   },
-  render: function() {
+  render() {
     return (
       <div id="main">{this.props.message}</div>
     )
   },
-  componentDidMount: function() {
+  componentDidMount() {
     var node = React.findDOMNode(this);
     node.innerHTML = this.props.message + ' And more!';
+    this.setState({
+      foo: 'bar'
+    });
+  },
+  shouldComponentUpdate(nextProps, nextState) {
+    console.log('shouldComponentUpdate', nextProps, nextState);
+    return true;
   }
 });
 
