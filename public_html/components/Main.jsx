@@ -3,7 +3,8 @@ import Graph from 'Graph';
 
 var MainComponent = React.createClass({
   propTypes: {
-    message: React.PropTypes.string.isRequired
+    message: React.PropTypes.string.isRequired,
+    dataUrl: React.PropTypes.string.isRequired
   },
   render() {
     return (
@@ -13,7 +14,7 @@ var MainComponent = React.createClass({
   componentDidMount() {
     var node = React.findDOMNode(this);
     node.innerHTML = this.props.message + ' And more!';
-    Graph(node);
+    Graph(node, this.props.dataUrl);
   },
   // Never update the dom because this component renders a graph, we update manually
   shouldComponentUpdate(nextProps, nextState) {

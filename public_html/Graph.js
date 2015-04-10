@@ -1,7 +1,7 @@
 import d3 from 'd3';
 import techan from 'techanjs';
 
-var Graph = function(element) {
+var Graph = function(element, data_url) {
 
   var margin = {top: 20, right: 20, bottom: 30, left: 50},
       width = 960 - margin.left - margin.right,
@@ -33,7 +33,7 @@ var Graph = function(element) {
           .append("g")
           .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-  d3.csv("data.csv", function(error, data) {
+  d3.csv(data_url, function(error, data) {
       var accessor = candlestick.accessor(),
           timestart = Date.now();
 
