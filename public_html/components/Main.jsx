@@ -6,8 +6,12 @@ var MainComponent = React.createClass({
   },
   render: function() {
     return (
-      <div>{this.props.message}</div>
+      <div id="main">{this.props.message}</div>
     )
+  },
+  componentDidMount: function() {
+    var node = React.findDOMNode(this);
+    node.innerHTML = this.props.message + ' And more!';
   }
 });
 
