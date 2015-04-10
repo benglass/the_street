@@ -12,13 +12,11 @@ var MainComponent = React.createClass({
   componentDidMount() {
     var node = React.findDOMNode(this);
     node.innerHTML = this.props.message + ' And more!';
-    this.setState({
-      foo: 'bar'
-    });
   },
+  // Never update the dom because this component renders a graph, we update manually
   shouldComponentUpdate(nextProps, nextState) {
     console.log('shouldComponentUpdate', nextProps, nextState);
-    return true;
+    return false;
   }
 });
 
