@@ -8,6 +8,7 @@ System.config({
 
 System.config({
   "map": {
+    "classnames": "github:jedwatson/classnames@1.1.4",
     "d3": "github:mbostock/d3@3.5.5",
     "jquery": "github:components/jquery@2.1.3",
     "jsx": "github:floatdrop/plugin-jsx@1.1.0",

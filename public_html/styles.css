@@ -27,3 +27,6 @@ path.candle.down {
     stroke: #FF0000;
 }
 
+.current {
+  font-weight: bold;
+}
