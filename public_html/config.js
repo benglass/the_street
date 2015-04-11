@@ -14,6 +14,7 @@ System.config({
     "jsx": "github:floatdrop/plugin-jsx@1.1.0",
     "lodash": "npm:lodash@3.6.0",
     "react": "npm:react@0.13.1",
+    "react-router": "npm:react-router@0.13.2",
     "techanjs": "github:andredumas/techan.js@0.5.0",
     "traceur": "github:jmcriffey/bower-traceur@0.0.87",
     "traceur-runtime": "github:jmcriffey/bower-traceur-runtime@0.0.87",
@@ -124,6 +125,9 @@ System.config({
       "base64-js": "npm:base64-js@0.0.8",
       "ieee754": "npm:ieee754@1.1.4",
       "is-array": "npm:is-array@1.0.1"
+    },
+    "npm:classnames@1.1.4": {
+      "assert": "github:jspm/nodelibs-assert@0.1.0"
     },
     "npm:commander@2.5.1": {
       "child_process": "github:jspm/nodelibs-child_process@0.1.0",
@@ -343,6 +347,13 @@ System.config({
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "crypto": "github:jspm/nodelibs-crypto@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.1"
+    },
+    "npm:react-router@0.13.2": {
+      "classnames": "npm:classnames@1.1.4",
+      "object-assign": "npm:object-assign@2.0.0",
+      "process": "github:jspm/nodelibs-process@0.1.1",
+      "qs": "npm:qs@2.4.1",
+      "react": "npm:react@0.13.1"
     },
     "npm:react-tools@0.13.1": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
